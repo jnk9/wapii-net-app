@@ -1,13 +1,14 @@
 <div class="headernav">
     <div class="container">
         <div class="row">
-            <div class="col-lg-1 col-xs-3 col-sm-2 col-md-2 logo "><a href="index.html">
-            <%= image_tag('logo.png', width: 100) %>
-            </a>
+            <div class="col-lg-1 col-xs-3 col-sm-2 col-md-2 logo ">
+                <%= link_to root_path do%>
+                    <%= image_tag('logo.png', width: 100) %>
+                <% end %>
             </div>
             <div class="col-lg-3 col-xs-9 col-sm-5 col-md-3 selecttopic">
-                <div class="dropdown">
-                    <a data-toggle="dropdown" href="#">Wapii Net </a>
+                <div class="">
+                    <%= link_to 'Wapii net', root_path%>
                 </div>
             </div>
         </div>
