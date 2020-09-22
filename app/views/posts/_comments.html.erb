@@ -1,0 +1,8 @@
+<div class="panel panel-default">
+  <div class="panel-body">
+    <h4>Comentarios</h4>
+    <% comments.each do |comment| %>
+    <p> <b><%= comment['email'] %></b>: <em><%= comment['body']%></em></p>
+    <% end %>
+  </div>
+</div>
