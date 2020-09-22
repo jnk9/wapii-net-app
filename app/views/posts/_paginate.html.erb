@@ -1,0 +1,2 @@
+<%= link_to 'Anterior', root_path(start: @start - 10), class: "btn btn-default #{'disabled' if @start.eql?(1)}" %>
+<%= link_to 'Siguiente', root_path(start: @start + 10), class: "btn btn-default  #{'disabled' if @start.eql?(91)}" %>

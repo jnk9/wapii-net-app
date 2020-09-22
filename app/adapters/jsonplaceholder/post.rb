@@ -4,7 +4,7 @@ module Jsonplaceholder
     def initialize; end
 
     def all(start = nil, limit = nil)
-      response = self.class.get("/posts?_star#{start}t=&_limit=#{limit}")
+      response = self.class.get("/posts?_start=#{start}t=&_limit=#{limit}")
       posts = JSON.parse(response.body)
       add_hash_count_comments(posts)
       add_hash_name(posts)
